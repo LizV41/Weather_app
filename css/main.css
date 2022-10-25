@@ -1,0 +1,269 @@
+.body{
+  height:100vh;
+}
+@media screen and (max-width: 40em){
+  
+}
+.open{
+  transform: translateY(-100%);
+}
+.cover .heading{
+  background-color: #fff;
+}
+.cover{
+  background-color: #CDF2FF;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  position: fixed;
+  height:100%;
+  width:100%;
+  justify-items: center;
+  transition: all .6s;
+  z-index: 1;
+}
+.cover img{
+  width: 50%;
+
+}
+.cover .button button{
+  margin-bottom: 5rem;
+  background-color: #456990;
+  color: #fff;
+  font-family: quicksand;
+  font-size: 1.5rem;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  margin-top: 5rem;
+
+}
+.cover p{
+  color: #456990;
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cover img{
+  margin-top: 4rem;
+}
+
+.main{
+  height: 100vh;
+}
+
+.top{
+  background-color: #CDF2FF;
+}
+
+.bottom{
+  background-color: #fff;
+}
+.top .day{
+  grid-row: 1;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  color: #456990;
+  font-family: quicksand;
+  font-size: 4rem;
+}
+.info .location h4{
+  justify-items: center;
+  text-align: center;
+  color: #456990;
+  font-family: roboto, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  margin-top: -0.5rem;
+}
+
+.current{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.current .icon{
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  padding-left: 3rem;
+}
+.current .icon img{
+  width: 110%
+}
+.current .temp{
+  justify-items: center;
+  color: #456990;
+  font-family: quicksand;
+  font-size: 6rem;
+  grid-column: 2;
+  grid-row: 1;
+  position: relative; top: 3rem ;left: 2rem;
+}
+.current .description{
+  justify-items: center;
+  color: #456990;
+  font-family: quicksand;
+  font-size: 2rem;
+  grid-column: 2;
+  grid-row: 2;
+  position: relative; left: 2rem; top: -1rem;
+}
+.current .summary{
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  align-self: center;
+  justify-self: center;
+  color: #456990;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.extra {
+  padding-top: 1rem;
+}
+
+.extra ul{
+  list-style-type: none;
+  padding: none;
+  margin: none;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-items: center;
+  text-align: center;
+  color: #456990;
+  font-size: 0.8rem;
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.extra li{
+  display: inline-block;
+}
+.extra li img{
+  width: 40%;
+}
+
+.summary{
+  grid-column: 1 / span 3;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  color: #456990;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.highlow{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-items: center;
+}
+
+.highlow img{
+  width: 40%;
+  padding-left: 2rem;
+  position: relative; top: -2rem;
+
+}
+.start{
+  border-right:  2px solid #456990;
+}
+.end{
+  border-left:  2px solid #456990;
+}
+
+.highlow h3{
+  color: #456990;
+  font-family: quicksand;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+
+}
+
+.highlow .temp{
+  padding-left: 2rem;
+  color: #456990;
+  font-family: quicksand;
+  font-size: 4rem;
+  position: relative; top: 2rem ;left: -2rem;
+}
+
+.heading{
+  color: #fff;
+  font-family: quicksand;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+}
+.extended{
+  height: 100%;
+  padding: 0.5rem 2rem 2rem 2rem;
+  background-color: #456990;
+  margin-top: 1rem;
+}
+
+.extended ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6,1fr);
+  height: 100%;
+  color: #456990;
+  margin: 0;
+  padding: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #CDF2FF;
+}
+
+.extended li {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.extended li img{
+  height: 3rem;
+  align-content: right;
+}
+
+.extended h4{
+  color: #456990;
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.extended .high{
+  color: #456990;
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.extended .low{
+  color: #456990;
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.extended li:nth-child(odd){
+  background-color: #fff;
+}
+
+
+
